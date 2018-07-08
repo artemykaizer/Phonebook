@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=cyrillic');
+
+
+.save-cl {
+    min-width: 154px;
+}
+
+.nav-wrapper {
+    min-width: 300px;
+}
+
+.btn-group {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    margin-bottom: 15px;
+}
+
+.wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+}
