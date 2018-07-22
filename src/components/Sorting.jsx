@@ -3,7 +3,7 @@ import {sortPeoples} from '../actions/filterActions'
 import {connect} from 'react-redux'
 
 
-function SortingContainer (props) {
+function Sorting (props) {
     return (
         <div className="nav-wrapper">
         <label htmlFor="sortSelect">Sort by:
@@ -29,6 +29,5 @@ function mapDispatchToProps (dispatch) {
     }
 }
 
-const Sorting = connect(null, mapDispatchToProps)(SortingContainer)
 
-export default Sorting
+export default connect(null, mapDispatchToProps)(Sorting)

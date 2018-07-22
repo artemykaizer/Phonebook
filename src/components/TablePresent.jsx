@@ -19,7 +19,7 @@ function TablePresent (props) {
     }
 
     return (
-            <div className="table-container">
+            <div class="table-responsive">
             <table className="table table-hover main-table">
             <thead>
                 <tr>

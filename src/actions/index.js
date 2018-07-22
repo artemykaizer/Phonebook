@@ -13,23 +13,17 @@ function requestPeoples (peoples) {
     }
 }
 
-export function requestStart() {
-    return {
-        type: REQUEST_START
-    }
-}
 
 export function getPeoples () {
     return function (dispatch) {
-        dispatch(requestStart())
-        fetch("http://www.json-generator.com/api/json/get/cgkKOhvAOa?indent=2")
+        dispatch({
+            type: REQUEST_START
+        })
+        fetch("https://www.json-generator.com/api/json/get/cgkKOhvAOa?indent=2")
             .then(response => response.json())
             .then(result => {
                 dispatch(requestPeoples(result)) 
                 dispatch(createLettersBar()) 
-            })
-            .catch(err => {
-                dispatch(requestPeoples("ERROR")) 
             })
     }
 }

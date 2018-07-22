@@ -6,7 +6,7 @@
 }
 
 .nav-wrapper {
-    min-width: 300px;
+    
 }
 
 .btn-group {
@@ -21,4 +21,12 @@
 .wrapper {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.add-btn {
+  width: 135px;
+}
+
+td {
+    padding-top: 50px;
 }

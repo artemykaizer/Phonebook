@@ -35,6 +35,4 @@ function mapStateToProps(state) {
     }
 } 
 
-const Table = connect(mapStateToProps)(TablePresent)
-
-export default Table
+export default connect(mapStateToProps)(TablePresent)

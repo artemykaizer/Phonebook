@@ -2,7 +2,7 @@ import React from "react"
 import {connect} from 'react-redux'
 import {addContact, deleteContact} from '../actions/index'
 
-class TableRowContainer extends React.Component {
+class TableRow extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -42,6 +42,7 @@ class TableRowContainer extends React.Component {
             <td>{this.props.human.age}</td>
             <td>{this.props.human.address}</td>
             <td>{this.props.human.phone}</td>
+            <td>
             {this.state.added ? 
                                     <button type="button" className="btn btn-outline-danger del-btn"
                                     onClick={() => this.deleteFromList(this.props.human)}>
@@ -53,6 +54,7 @@ class TableRowContainer extends React.Component {
                                     Add to my list
                                     </button>
                                   }
+            </td>
         </tr>
         )
     }
@@ -71,6 +73,4 @@ function mapDispatchToProps (dispatch) {
     }
 }
 
-const TableRow = connect(mapStateToProps, mapDispatchToProps)(TableRowContainer)
-
-export default TableRow
+export default connect(mapStateToProps, mapDispatchToProps)(TableRow)

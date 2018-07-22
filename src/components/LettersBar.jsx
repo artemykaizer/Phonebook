@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {filterByChar} from '../actions/filterActions'
 
-function LettersBarContainer (props) {
+function LettersBar (props) {
     return (
         <div>
 
@@ -35,6 +35,4 @@ function mapDispatchToProps (dispatch) {
     }
 }
 
-const LettersBar = connect(mapStateToProps, mapDispatchToProps)(LettersBarContainer)
-
-export default LettersBar
+export default connect(mapStateToProps, mapDispatchToProps)(LettersBar)

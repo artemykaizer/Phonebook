@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 import {filterByGender} from '../actions/filterActions'
 
-function GenderFilterContainer (props) {
+function GenderFilter (props) {
     return (
         <label>
             Show only:
@@ -25,6 +25,4 @@ function mapDispatchToProps (dispatch) {
 }
 
 
-const GenderFilter = connect(null, mapDispatchToProps)(GenderFilterContainer)
-
-export default GenderFilter
+export default connect(null, mapDispatchToProps)(GenderFilter)

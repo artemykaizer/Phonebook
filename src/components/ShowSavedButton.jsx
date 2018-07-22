@@ -2,7 +2,7 @@ import React from 'react'
 import {displaySaved} from '../actions/index'
 import {connect} from 'react-redux'
 
-function ShowSavedButtonContainer (props) {
+function ShowSavedButton (props) {
     return (
         <button className="btn btn-primary" 
         onClick={props.displaySaved}>
@@ -27,6 +27,5 @@ function mapStateToProps (state) {
     }
 }
 
-const ShowSavedButton = connect(mapStateToProps, mapDispatchToProps)(ShowSavedButtonContainer)
 
-export default ShowSavedButton
+export default connect(mapStateToProps, mapDispatchToProps)(ShowSavedButton)

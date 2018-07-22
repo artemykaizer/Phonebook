@@ -20,6 +20,4 @@ function mapDispatchToProps (dispatch) {
 }
 
 
-const SearchInput = connect(null, mapDispatchToProps)(SearchInputContainer)
-
-export default SearchInput
+export default connect(null, mapDispatchToProps)(SearchInputContainer)

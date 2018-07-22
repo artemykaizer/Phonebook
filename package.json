@@ -1,6 +1,7 @@
 {
-  "name": "phnb00k",
-  "version": "0.1.0",
+  "name": "phnb000k",
+  "homepage": "https://phnb000k.herokuapp.com",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.1",
