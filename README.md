@@ -3,6 +3,7 @@ This is an app with filtering, sorting and searching conacts.<br>
 Contacts can be saved in localstorage.<br>
 Stack - React+Redux.
 
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
