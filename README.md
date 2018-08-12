@@ -1,4 +1,4 @@
-Homepage - https://phnb000k.herokuapp.com/<br>
+### Homepage - https://phnb000k.herokuapp.com/<br>
 This is an app with filtering, sorting and searching conacts.<br>
 Contacts can be saved in localstorage.<br>
 Stack - React+Redux and Bootstrap.
